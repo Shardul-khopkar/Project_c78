@@ -1,0 +1,21 @@
+h1{
+    color:#cd5c5c;
+    font-size: xx-large;
+    z-index: -1;
+}
+p{
+    color: burlywood;
+    font-size: large;
+   
+}
+button{
+     color: rgba(74, 30, 116, 0.589);
+     background-color: rgb(102, 235, 157);
+     box-sizing: 50px;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(35, 48, 219), rgb(252, 3, 3));
+     text-align:center;
+  }
+   

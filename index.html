@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title> Project 78: My Family Book </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <h1> My Family Book: The Khopkar Family </h1>
+    <img style="height: 500px;" src="me.png" class="img-responsive" id="image">
+    <p id="name"> Shardul Khopkar </p>
+    <h4 id="warning"></h4>
+    <div>
+        <button type="button" onclick="next()"> Next Family Member </button>
+    </div>
+    <script>
+         var images = ["me.png" , "mummy.png" , "dad.png" , "nophoto.png" , "nophoto.png" , "nophoto.png"];
+        var names = ["Shardul Khopkar" , "Madhuri Khopkar" , "Nilesh Khopkar" , "(pet dog)Jio" , "(pet parrot)Chimpoo" , "(pet parrot,Late) Simpoo"];
+        var noph = ["","","","No Photo","No Photo","No Photo"];
+        var i = 0;
+        function next() {
+            document.getElementById("image").src = images[i];
+            document.getElementById("name").innerHTML = names[i];
+            document.getElementById("warning").innerHTML= noph[i];
+            i++;
+            if (i > 5) {
+                i = 0;
+            }   
+        }
+    </script>
+</body>
+
+</html>
